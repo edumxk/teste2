@@ -1,0 +1,11 @@
+<h1>Agenda</h1>
+{% for Agenda in object_list %}
+<div>
+<h2>{{ Agenda.titulo }}</h2>
+    <div>
+        <p>{{ Agenda.nota | linebreaksbr }}</p>
+        <p>{{ Agenda.data_evento}}</p>
+        <p>{{ Agenda.privado}}</p>
+</div><br>
+</div>
+{% endfor %}
